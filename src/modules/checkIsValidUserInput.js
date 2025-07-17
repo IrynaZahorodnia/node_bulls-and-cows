@@ -14,7 +14,7 @@ function checkIsValidUserInput(userInput) {
   }
 
   const set = new Set(
-    userInput.split('').filter((el) => Number.isInteger(+el)),
+    userInput.split('').filter((el) => el >= '0' && el <= '9'),
   );
 
   if (set.size !== 4) {

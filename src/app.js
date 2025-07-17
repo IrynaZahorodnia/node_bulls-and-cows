@@ -23,6 +23,8 @@ const playGame = () => {
     }
 
     if (+userInput === random) {
+      console.log('Congratulations, you win!');
+
       return rl.close();
     }
 
